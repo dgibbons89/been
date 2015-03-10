@@ -1,0 +1,18 @@
+
+
+<section class="top">
+
+      <%= image_tag @post.image.url %>
+      <h2 class="wide"><%= @post.category.name %></h2>
+      <h3 class="wide"><%= @post.title %></h3>
+
+
+  <div class="max-wide has-padding">
+    <p><%= @post.body %></p>
+    <%= link_to 'Back', posts_path, class: "btn-primary btn-lg" %>
+  </div>
+
+
+
+
+</section>

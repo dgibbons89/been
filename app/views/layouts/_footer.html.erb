@@ -1,0 +1,49 @@
+<section class="footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+          <h2>Stay in the know on where to go</h2>
+          <h3>Sign up for our e-newsletter</h3>
+           <div class="form-group email">
+                    <label class="sr-only" for="email">Email</label>
+                    <input id="email" type="email" placeholder="johndoe@email.com">
+                    </div><!--//form-group-->
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+          <h2>Categories</h2>
+            <ul>
+                <% Category.all.each do |category| %>
+                  <li><%= link_to category.name, posts_path(category: category.name) %></li>
+                <% end %>
+            </ul>
+      </div>
+
+      <div class="col-md-3 col-sm-3"> 
+          <h2>Social</h2>
+          <li><a href="https://www.facebook.com/getbeen" target="_blank">Facebook</a></li>
+          <li><a href="http://instagram.com/getbeen/" target="_blank">Instagram</a> </li>
+          <li><a href="https://twitter.com/BeenMobileApp" target="_blank">Twitter</a></li>
+          <li><a href="http://www.pinterest.com/getbeen" target="_blank">Pinterest</a></li>  
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+          <h2>About Been</h2>
+          <h3>Been is a soon-to-launch mobile app that helps you find places to go based on friends' recommendations and keeps track of where you've been.</h3> 
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="footer-content-container-slim container-semi-opaque">
+      <div class="container page-container">
+        <div class="row text-muted text-center row-space-8 row-space-top-6 copy-wrap">
+          <div id="copyright">© Been 2014</div>
+        </div>
+      </div>
+  </div>
+
+</section>

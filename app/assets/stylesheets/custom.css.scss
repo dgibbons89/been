@@ -1,0 +1,61 @@
+$body-bg: 										white;
+$font-family-sans-serif: 			gill;
+$navbar-height:								45px;
+$navbar-default-bg: 					white;
+$navbar-default-brand-color: 	#159ccb;
+$brand-primary: 							#159ccb;
+$jumbotron-bg: 								white;
+$footer-default-bg:           #515b5d;
+
+
+@import 'bootstrap';
+
+#push {
+  height: 200px;
+}
+
+.navbar-brand {
+	font-weight: bold;
+  text-color: #159ccb;
+  
+}
+
+
+.footer {
+  background-color: #515b5d;
+  padding: 5rem 0rem 8rem;
+
+
+  h2 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    
+  }
+  h3 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    
+    line-height: 1.5em;
+  }
+  li {
+    list-style: none;
+    
+  }
+  a {
+    text-color: #fff;
+  }
+  .thumbnail {
+    padding: 7px 10px 7px 10px;
+    border: none;
+    margin-right: -10px;
+    margin-left: -10px;
+    border-right: 1px solid #eaecf1;
+    height: 180px;
+    border-radius: 0px;
+  }
+  .final {
+    border-right: none;
+  }
+}
