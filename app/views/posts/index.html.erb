@@ -3,24 +3,21 @@
 
 
 
+<div class="container">
+	<div class="row" >
+		<div class="col-md-12">
+ 
+  	<% @posts.each do |post| %>
+  		<div class="posts">
+				<div class="box panel panel-default">
+						<%= link_to image_tag(post.image.url), post %>  
+	      		<h5><%= post.category.name %></h5>
+	      		<h6><%= post.title %></h6>
+    		</div>
+			</div>
+		<% end %>
 
 
-<div class="posts">
-
-    <% @posts.all.each do |post| %>
-    <div class="box panel panel-default">
-
-    
-
-      <%= link_to image_tag(post.image.url), post %>  
-      <h2><%= post.category.name %></h2>
-      <h3><%= post.title %></h3>
-     
+		</div>
+	</div>
 </div>
-</div>
-      <% end %>
-
-   
-    
-
-
