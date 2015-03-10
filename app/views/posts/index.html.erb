@@ -6,20 +6,20 @@
 
 
 <div class="posts">
-<div class="box panel panel-default">
+
     <% @posts.all.each do |post| %>
-    
+    <div class="box panel panel-default">
 
     
 
       <%= link_to image_tag(post.image.url), post %>  
       <h2><%= post.category.name %></h2>
       <h3><%= post.title %></h3>
-     </div>
-
+     
+</div>
+</div>
       <% end %>
 
-      </div>
    
     
 
